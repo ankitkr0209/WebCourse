@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        div {
+            color: rgba(255, 0, 0, 0.749);
+            background-color: aquamarine;
+        }
+        /* class selector */
+        .black
+        {
+            background-color: antiquewhite;
+        }
+        /* id selector */
+        #green{
+            background-color: green;
+        }
+        /* child selector */
+        div>p{
+            color: blueviolet;
+            background-color: brown;
+        }
+        /* decendent selector */
+        /* it select all the p tag in div tag in every div tag  */
+        div p {
+            color: aliceblue;
+            background-color: black;
+            border: solid 2px blueviolet;
+            padding: 20px;
+            margin: 20px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selctor  */
+        a:visited
+        {
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            color: red;
+            background-color: blue;
+        }
+        body{
+            /* background-image: url(https://th.bing.com/th/id/OIP.rmYwxqzhQ97YyIe8U944FQHaEK?rs=1&pid=ImgDetMain);
+            background-repeat:repeat-x; */
+            background-color: #333;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="black">
+       Hey I am Ankit and i am in exploarin css.
+       <article>
+        <p>in am iside a div and article tag.</p>
+       </article>
+    </div>
+    <div id="green">
+        it is very intresting topic.
+        <p> i am a para inside a div .</p>
+    </div>
+    <a href="https://www.google.com">go to google</a>
+    <a href="https://www.bing.com">go to bing</a>
+</body>
+</html>
